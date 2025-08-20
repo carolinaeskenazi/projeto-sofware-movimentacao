@@ -25,7 +25,7 @@ Algumas coisas que vocês irão precisar:
 - Verificar PR com o coverage:
 https://github.com/marketplace/actions/pytest-coverage-comment
 
-- Para fazer mocks, patch, pode ser o decorator @patch
+- Para fazer mocks no geral -> usar o patch, pode ser o decorator @patch, com ele é possível definir mocks estáticos diretamente no decorator, ou mocks dinâmicos com a função side_effect
 
-- Para definir os mocks, usar o MagicMock
+- Para fazer mocks de objetos, usar o MagicMock, necessário para mockar o retorno da api requests
 
