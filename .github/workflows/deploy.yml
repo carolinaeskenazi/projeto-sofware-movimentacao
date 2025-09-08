@@ -47,5 +47,5 @@ jobs:
           port: 22
           script: |
             docker stop movimentacoes
-            docker rm --force smovimentacoes
+            docker rm --force movimentacoes
             docker run -d -p 8081:5000 --name movimentacoes carolinaeskenazi/movimentacoes-ci:${{ github.sha }}
